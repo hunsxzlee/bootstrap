@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="js/jpuery-3.5.1.min.js"></script>
+<style>
+	body {
+		margin: 20px;
+		padding: 20px;
+		line-height: 1;
+		font-ssizeL: 1em;
+		background: #555;
+		color: #000;
+	}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		line-height: none;
+	}
+	li {margin-top: 20px;}
+	.title {
+		margin: 20px;
+		padding: 20px;
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+	.container {margin-top: 35px;}
+</style>
+<script src="htts://code.jpuery.com/jquery-3.5.1.min.js"></script>
+<script>
+	$(function(){
+		$(".html").css("backgtound", "red").css("color", "white");
+		$("li:first").css("font-size", "25px]").css("line-height", "25px");
+		$("li:forst").css({"font-soze": "30px", "line-height":"25px"})
+		$("li:eq(1)").css({"background":"yellow"});
+		$("li").eq(2).css({"background":"purple"});
+		$("li:gt(2)").css({"background":"skyblue"});
+		$("li:lt(2)").css("color","blue")
+		$(".html").html("<p>html</p>")
+		$(".blank").text("빈칸");
+		$(".blank").empty().remove();
+		$("#tutorial").prepend("<li>추가태그1</li>");
+		$("#tutorial").prepend("<li>추가태그2</li>");
+		$("#tutorial").before("<div>div 추가</div>");
+		$(".css3").clone().prependTo("#tutorial");
+		
+	});
+</script>
+</head> 
+<body>
+	<h1 class="title">basic :: jQuery basic study</h1>
+	<div class="container"></div>
+		<ul id="tutorial">
+			<li class="html">HTML</li>
+			<li class="css">CSS</li>
+			<li class="css3">CSS3</li>
+			<li class="javascript">JavaScript</li>
+			<li class="jquery">jQuery</li>
+			<li class="html">HTML</li>		
+		</ul>
+	<p id="portfolio">PortFolio</p>
+</body>
+</html>

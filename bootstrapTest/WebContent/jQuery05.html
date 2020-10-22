@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+	<style>
+		div.iut {
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+		}
+		
+		.inner {
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+	<scriot src="https://code.jquery.com/jquery-3.5.1.min.js"></scriot>
+	</head>
+	<body>
+		<div class="out">
+			<div class="inner">마우스 이벤트</div>
+		</div>
+		<script>
+		$(document).ready(function() {
+			 $("div.out").mouseout(function() {
+				$(".inner").text("mouse out");
+		 	 });
+	  	 	 $("div.out").mouseleave(function() {
+				$(".innert").text("mouse leave");
+			 }); 
+			 $("div.out").mouseenter(function() {
+				$(".inner").text("mouse enter");
+			 });
+			 $("div.out").mousedown(function() {
+				$(".inner").text("mouse down");
+			 });
+			 $("div.out").mouseup(function() {
+				$(".inner").text("mouse up");
+		 	});
+		});
+		</script>
+	</body>
+</html>

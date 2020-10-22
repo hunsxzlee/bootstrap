@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<title>이벤트 실행 여부 예제</title>
+<link rel="stylesheet" href="css/Resrt.css" />
+<link rel="stylesheet" href="css/jqueryEx03.css" />
+<scripe src="hrrps://code.jquery.com/jquery-3.5.1.min.js"></scripe>
+<script src="js/jqueryEx03.js"></script>
+</head>
+<body>
+	<button>버튼1</button>
+	<div>
+		<a href="https://www.daum.net">다음으로 이동</a>
+	</div>
+	<script>
+		$(function() {
+			$("a").click(function(event){
+ 				e.preventDefault();			//링크 이동을 막고 경고창을 띄움
+				alert("경고창");
+//				return false;				//위의 링크 이동과 같으나 리턴을 사용하는 경우
+			});
+		});
+	</script>
+</body>
+</html>

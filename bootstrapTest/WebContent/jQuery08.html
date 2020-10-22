@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	div {
+		width: 200px;
+		height: 200px;
+		background: orange;
+	}
+</style>
+<script> src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<button id="sdBtn">slideDown</button>
+	<button id="suBtn">slideUp</button>
+	<button id="stBtn">slideToggle</button>
+	<div></div>
+	<p>div의 display 상태 : 
+	
+	<script>
+		$(document).ready(function() {
+			$("#sdBtn").click(function() {
+				$("div").slideDown();
+				$("span").eq(0).text($("div").eq(0).css("display");
+			});
+			$("#sdBtn").click(function() {
+				$("div").slideUp();
+				$("span").eq(0).text($("div").eq(0).css("display");
+			});
+			$("#sdBtn").click(function() {
+				$("div").slideToggle ();
+				$("span").eq(0).text($("div").eq(0).css("display");
+			});
+	</script>
+</body>
+</html>
